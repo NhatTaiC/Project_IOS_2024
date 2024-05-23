@@ -135,8 +135,12 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omh-13-lQ6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omh-13-lQ6">
                                 <rect key="frame" x="143" y="614.66666666666663" width="107" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="isT-zR-ebU"/>
+                                    <constraint firstAttribute="height" constant="35" id="wvN-ov-muI"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Go To Map"/>
                             </button>
@@ -146,11 +150,13 @@
                         <constraints>
                             <constraint firstItem="U1k-Vq-qFw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5eM-QA-BQb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oiI-b7-vjf" secondAttribute="trailing" constant="40" id="8GR-FN-bpk"/>
-                            <constraint firstItem="Omh-13-lQ6" firstAttribute="top" secondItem="oiI-b7-vjf" secondAttribute="bottom" constant="20" id="Az1-gs-Wvo"/>
+                            <constraint firstItem="Omh-13-lQ6" firstAttribute="top" secondItem="oiI-b7-vjf" secondAttribute="bottom" constant="20" id="AAv-y3-8IZ"/>
                             <constraint firstItem="ON8-Cs-Efo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KfR-dz-BDo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ON8-Cs-Efo" secondAttribute="trailing" constant="20" id="ORb-Jm-FVK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Omh-13-lQ6" secondAttribute="trailing" constant="143" id="TVU-27-5RJ"/>
                             <constraint firstItem="oiI-b7-vjf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="XLy-RU-3K2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U1k-Vq-qFw" secondAttribute="trailing" constant="20" id="Xd4-u1-BeJ"/>
+                            <constraint firstItem="Omh-13-lQ6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="ZhV-kH-Ud0"/>
                             <constraint firstItem="oiI-b7-vjf" firstAttribute="top" secondItem="ON8-Cs-Efo" secondAttribute="bottom" constant="20" id="cZQ-mj-Kuo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tcE-kc-maE" secondAttribute="trailing" constant="10" id="cgU-9i-jjB"/>
                             <constraint firstItem="U1k-Vq-qFw" firstAttribute="top" secondItem="tcE-kc-maE" secondAttribute="bottom" constant="20" id="hW6-SC-gpQ"/>

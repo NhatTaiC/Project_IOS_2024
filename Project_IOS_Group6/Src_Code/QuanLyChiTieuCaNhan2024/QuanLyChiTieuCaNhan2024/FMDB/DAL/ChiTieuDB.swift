@@ -149,7 +149,67 @@ class ChiTieuDB {
             }
         }
     }
-}
-
-
-
+    
+    // 3. Sua thong tin chitieu vao CSDL
+    func updateChiTieu(chitieu: ChiTieu) -> Bool {
+        var OK = false
+        if open() {
+            if database!.tableExists(CHITIEU_TABLE_NAME) {
+                // Cau lenh SQL
+                let sql = "UPDATE \(CHITIEU_TABLE_NAME) "
+                + " SET "
+                + "\(CHITIEU_NGAYTAO)" + " = ? "
+                + ", " + "\(CHITIEU_SOTIEN)" + " = ? "
+                + "WHERE \(CHITIEU_TENCT) = ?"
+                
+                // Ghi du lieu vao bang meals cua CSDL
+                //                if database!.executeUpdate(sql, withArgumentsIn: [chitieu.tenCT, chitieu.ngayTao, chitieu.soTien]) {
+                //                    os_log("Sua du lieu thanh cong!")
+                //                    OK = true;
+                //                } else {
+                //                    os_log("Sua du lieu khong thanh cong!")
+                //                }
+                //                // Dong CSDL
+                //                close()
+                
+                if database!.executeUpdate(sql, withArgumentsIn: [chitieu.ngayTao, chitieu.soTien, chitieu.tenCT]) {
+                    os_log("Sua du lieu thanh cong!")
+                    OK = true;
+                } else {
+                    os_log("Sua du lieu khong thanh cong!")
+                }
+                // Dong CSDL
+                close()
+            }
+            else {
+                os_log("Bang du lieu chua ton tai!")
+            }
+        }
+        return OK
+    }
+        
+        // 4. Xoa thong tin chitieu vao CSDL
+        func deleteChiTieu(chitieu: ChiTieu) -> Bool {
+            var OK = false
+            if open() {
+                if database!.tableExists(CHITIEU_TABLE_NAME) {
+                    // Cau lenh SQL
+                    let sql = "DELETE FROM \(CHITIEU_TABLE_NAME) WHERE \(CHITIEU_TENCT) = ?"
+                    
+                    // Ghi du lieu vao bang meals cua CSDL
+                    if database!.executeUpdate(sql, withArgumentsIn: [chitieu.tenCT]) {
+                        os_log("Xoa du lieu thanh cong!")
+                        OK = true;
+                    } else {
+                        os_log("Xoa du lieu khong thanh cong!")
+                    }
+                    // Dong CSDL
+                    close()
+                }
+                else {
+                    os_log("Bang du lieu chua ton tai!")
+                }
+            }
+            return OK
+        }
+    }

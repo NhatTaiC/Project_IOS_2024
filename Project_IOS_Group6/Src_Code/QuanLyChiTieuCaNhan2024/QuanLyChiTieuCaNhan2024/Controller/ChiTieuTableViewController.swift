@@ -90,32 +90,32 @@ class ChiTieuTableViewController: UITableViewController {
         fatalError("Khong the tao cell!")
     }
     
-    /*
+    
     // Dinh nghia ham xu ly su kien cho cell
     @objc private func editMeal(_ sender: UITapGestureRecognizer) {
-        //print("Cell tapped")
-        // Tao doi tuong man hinh MealDetailController
-        if let mealDetail = self.storyboard!.instantiateViewController(withIdentifier: mealDetailID) as? MealDetailController {
-            // Lay doi tuong cell duoc tap
-            if let cell = sender.view as? MealCell {
-                // Xac dinh vi tri cua cell trong table view
-                if let indexPath = tableView.indexPath(for: cell) {
-                    // Truyen meal sang mealDetailController
-                    mealDetail.meal = meals[indexPath.row]
-                    
-                    // Danh dau duong di
-                    navigationType = .editMeal
-                    
-                    // Luu vi tri cell duoc chon
-                    selectedIndexpath = indexPath
-                    
-                    // Chuyen sang man hinh khac
-                    present(mealDetail, animated: true)
-                }
-            }
-        }
+        print("Cell tapped")
+//        // Tao doi tuong man hinh MealDetailController
+//        if let mealDetail = self.storyboard!.instantiateViewController(withIdentifier: mealDetailID) as? MealDetailController {
+//            // Lay doi tuong cell duoc tap
+//            if let cell = sender.view as? MealCell {
+//                // Xac dinh vi tri cua cell trong table view
+//                if let indexPath = tableView.indexPath(for: cell) {
+//                    // Truyen meal sang mealDetailController
+//                    mealDetail.meal = meals[indexPath.row]
+//
+//                    // Danh dau duong di
+//                    navigationType = .editMeal
+//
+//                    // Luu vi tri cell duoc chon
+//                    selectedIndexpath = indexPath
+//
+//                    // Chuyen sang man hinh khac
+//                    present(mealDetail, animated: true)
+//                }
+//            }
+//        }
     }
-    */
+    
     
     /*
      // Override to support conditional editing of the table view.
