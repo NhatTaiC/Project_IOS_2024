@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1CF24E2C006EAA000C9394 /* ChiTieuDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1CF24D2C006EAA000C9394 /* ChiTieuDetailController.swift */; };
 		CE71FAC12BFE6ADB00CDDA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71FAC02BFE6ADB00CDDA7E /* AppDelegate.swift */; };
 		CE71FAC32BFE6ADB00CDDA7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71FAC22BFE6ADB00CDDA7E /* SceneDelegate.swift */; };
 		CE71FAC52BFE6ADB00CDDA7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71FAC42BFE6ADB00CDDA7E /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE1CF24D2C006EAA000C9394 /* ChiTieuDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChiTieuDetailController.swift; sourceTree = "<group>"; };
 		CE71FABD2BFE6ADB00CDDA7E /* QuanLyChiTieuCaNhan2024.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuanLyChiTieuCaNhan2024.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE71FAC02BFE6ADB00CDDA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE71FAC22BFE6ADB00CDDA7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 		CE71FAFA2BFE6C9000CDDA7E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CE1CF24D2C006EAA000C9394 /* ChiTieuDetailController.swift */,
 				CE71FB152BFE716200CDDA7E /* ChiTieuTableViewController.swift */,
 			);
 			path = Controller;
@@ -369,6 +372,7 @@
 				CE71FACB2BFE6ADB00CDDA7E /* QuanLyChiTieuCaNhan2024.xcdatamodeld in Sources */,
 				CE71FB0E2BFE6DB100CDDA7E /* FMDatabase.m in Sources */,
 				CE71FB162BFE716200CDDA7E /* ChiTieuTableViewController.swift in Sources */,
+				CE1CF24E2C006EAA000C9394 /* ChiTieuDetailController.swift in Sources */,
 				CE71FAC32BFE6ADB00CDDA7E /* SceneDelegate.swift in Sources */,
 				CE71FB182BFE742400CDDA7E /* ChiTieuCell.swift in Sources */,
 				CE71FB0F2BFE6DB100CDDA7E /* FMDatabasePool.m in Sources */,
