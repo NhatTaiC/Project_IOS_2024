@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tds-SX-hxg">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chi Tieu Table View Controller-->
+        <scene sceneID="plW-Pw-BjZ">
+            <objects>
+                <tableViewController id="tds-SX-hxg" customClass="ChiTieuTableViewController" customModule="QuanLyChiTieuCaNhan2024" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="u3W-Mj-z0l">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="46i-2P-0a8">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Danh Sach Chi Tieu" id="M55-2Q-eHb">
+                                    <barButtonItem key="rightBarButtonItem" title="Them CT" id="5FI-hd-RhN">
+                                        <connections>
+                                            <action selector="newChiTieu:" destination="tds-SX-hxg" id="FXN-qA-pXQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChiTieuCell" rowHeight="114" id="itg-sW-YbL" customClass="ChiTieuCell" customModule="QuanLyChiTieuCaNhan2024" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="94" width="393" height="114"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="itg-sW-YbL" id="76k-98-PeI">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="114"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8j-rv-cg6">
+                                            <rect key="frame" x="10" y="5" width="283" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="sHy-se-OiC"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axB-Db-zdf">
+                                            <rect key="frame" x="10" y="40" width="283" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="Aze-3n-F8e"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9C2-Gn-ufA">
+                                            <rect key="frame" x="10" y="75" width="283" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="ecO-E8-nQR"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="9C2-Gn-ufA" secondAttribute="bottom" constant="5" id="0OY-UV-cbf"/>
+                                        <constraint firstItem="s8j-rv-cg6" firstAttribute="leading" secondItem="76k-98-PeI" secondAttribute="leading" constant="10" id="8tJ-u2-bm3"/>
+                                        <constraint firstItem="axB-Db-zdf" firstAttribute="top" secondItem="s8j-rv-cg6" secondAttribute="bottom" constant="5" id="Cdy-pQ-ixg"/>
+                                        <constraint firstAttribute="trailing" secondItem="s8j-rv-cg6" secondAttribute="trailing" constant="100" id="IfO-RK-Xco"/>
+                                        <constraint firstItem="axB-Db-zdf" firstAttribute="top" secondItem="s8j-rv-cg6" secondAttribute="bottom" constant="5" id="NhX-aK-GN4"/>
+                                        <constraint firstItem="s8j-rv-cg6" firstAttribute="top" secondItem="76k-98-PeI" secondAttribute="top" constant="5" id="QBk-A4-s1k"/>
+                                        <constraint firstItem="9C2-Gn-ufA" firstAttribute="leading" secondItem="76k-98-PeI" secondAttribute="leading" constant="10" id="SCL-3r-kmf"/>
+                                        <constraint firstAttribute="trailing" secondItem="9C2-Gn-ufA" secondAttribute="trailing" constant="100" id="Wz8-d8-bTq"/>
+                                        <constraint firstAttribute="trailing" secondItem="axB-Db-zdf" secondAttribute="trailing" constant="100" id="Z7c-jT-C4J"/>
+                                        <constraint firstItem="9C2-Gn-ufA" firstAttribute="top" secondItem="axB-Db-zdf" secondAttribute="bottom" constant="5" id="hnW-iR-zBo"/>
+                                        <constraint firstItem="axB-Db-zdf" firstAttribute="leading" secondItem="76k-98-PeI" secondAttribute="leading" constant="10" id="vUJ-tt-ebA"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ngayTao" destination="axB-Db-zdf" id="aak-LV-484"/>
+                                    <outlet property="soTien" destination="9C2-Gn-ufA" id="GVN-5C-FV4"/>
+                                    <outlet property="tenCT" destination="s8j-rv-cg6" id="MoV-bg-uBE"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tds-SX-hxg" id="ehK-eQ-OJ7"/>
+                            <outlet property="delegate" destination="tds-SX-hxg" id="4jc-B2-zXB"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="navigation" destination="M55-2Q-eHb" id="jJX-UY-Um7"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DCw-NM-kB5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-289.3129770992366" y="-704.22535211267609"/>
+        </scene>
+        <!--Chi Tieu Detail Controller-->
+        <scene sceneID="god-Nu-Tsv">
+            <objects>
+                <viewController storyboardIdentifier="ChiTieuDetailController" id="iom-n9-dyj" customClass="ChiTieuDetailController" customModule="QuanLyChiTieuCaNhan2024" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NVq-Td-h6d">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1w-hp-RtE">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <items>
+                                    <navigationItem title="Them Chi Tieu" id="nXB-V0-ZOk">
+                                        <barButtonItem key="leftBarButtonItem" title="Quay Ve" id="WqN-cO-cHm">
+                                            <connections>
+                                                <action selector="Cancel:" destination="iom-n9-dyj" id="dmG-VP-rmb"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Luu" id="dou-FL-zJA">
+                                            <connections>
+                                                <segue destination="JfX-WG-mht" kind="unwind" unwindAction="unwindFromChiTieuDetailController:" id="D1x-rB-Cwf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6yc-0y-2CB">
+                                <rect key="frame" x="193" y="141" width="180" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QQe-vF-l93">
+                                <rect key="frame" x="193" y="201" width="180" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E7J-zW-2Kn">
+                                <rect key="frame" x="193" y="261" width="180" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ten Chi Tieu:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HG-42-g0b">
+                                <rect key="frame" x="16" y="140" width="136" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="So Tien:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8n-s7-Fvu">
+                                <rect key="frame" x="16" y="259" width="136" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ngay Tao:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ov9-mk-CI9">
+                                <rect key="frame" x="16" y="199" width="136" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RTD-RV-koM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q1w-hp-RtE" firstAttribute="trailing" secondItem="RTD-RV-koM" secondAttribute="trailing" id="c1D-Kx-AEC"/>
+                            <constraint firstItem="Q1w-hp-RtE" firstAttribute="top" secondItem="RTD-RV-koM" secondAttribute="top" id="lv6-ff-mnX"/>
+                            <constraint firstItem="Q1w-hp-RtE" firstAttribute="leading" secondItem="RTD-RV-koM" secondAttribute="leading" id="yQO-UO-DbC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="huy" destination="WqN-cO-cHm" id="wtw-o0-Ath"/>
+                        <outlet property="luu" destination="dou-FL-zJA" id="08O-Xf-7fN"/>
+                        <outlet property="navigation" destination="nXB-V0-ZOk" id="29t-d5-4BI"/>
+                        <outlet property="ngayTao" destination="QQe-vF-l93" id="3yc-pM-oiY"/>
+                        <outlet property="soTien" destination="E7J-zW-2Kn" id="bav-wK-M7N"/>
+                        <outlet property="tenChiTieu" destination="6yc-0y-2CB" id="gHe-3L-WeG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="avk-s2-Qfx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="JfX-WG-mht" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="2zb-6f-l6U"/>
+            </objects>
+            <point key="canvasLocation" x="438.93129770992363" y="-704.22535211267609"/>
+        </scene>
+        <!--Edit Chi Tieu Detail Controller-->
+        <scene sceneID="cMM-fP-jEF">
+            <objects>
+                <viewController storyboardIdentifier="EditChiTieuDetailController" id="I6e-1i-5aM" customClass="EditChiTieuDetailController" customModule="QuanLyChiTieuCaNhan2024" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uRz-Tf-g84">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oR3-VJ-xU9">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Edit Chi Tieu" id="FFL-su-d1e">
+                                        <barButtonItem key="leftBarButtonItem" title="Quay Ve" id="Bcd-mH-AaA">
+                                            <connections>
+                                                <action selector="QuayVe:" destination="I6e-1i-5aM" id="a63-0f-SxD"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Luu" id="gRk-0a-ezm">
+                                            <connections>
+                                                <segue destination="FrB-6w-q5y" kind="unwind" unwindAction="unwindFromEditChiTieuDetailController:" id="c3r-SP-BK2"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ten Chi Tieu:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AtW-tN-UjD">
+                                <rect key="frame" x="16" y="152" width="135" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ngay Tao:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDQ-Te-rx2">
+                                <rect key="frame" x="16" y="198" width="135" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="So Tien:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mw-lv-ga8">
+                                <rect key="frame" x="16" y="246" width="135" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cDd-wj-R4s">
+                                <rect key="frame" x="181" y="147" width="196" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FtQ-BQ-FaO">
+                                <rect key="frame" x="181" y="193" width="196" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JRV-sW-V9C">
+                                <rect key="frame" x="181" y="241" width="196" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mnq-Tg-aN6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="luu" destination="gRk-0a-ezm" id="b5u-E6-5gc"/>
+                        <outlet property="navigation" destination="FFL-su-d1e" id="GIY-ke-kIk"/>
+                        <outlet property="ngayTao" destination="FtQ-BQ-FaO" id="i0W-J4-cRW"/>
+                        <outlet property="soTien" destination="JRV-sW-V9C" id="nMA-X8-Idn"/>
+                        <outlet property="tenCT" destination="cDd-wj-R4s" id="Opc-E4-7Lm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bic-P7-BkZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="FrB-6w-q5y" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-8.3969465648854964" y="-1488.0281690140846"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
