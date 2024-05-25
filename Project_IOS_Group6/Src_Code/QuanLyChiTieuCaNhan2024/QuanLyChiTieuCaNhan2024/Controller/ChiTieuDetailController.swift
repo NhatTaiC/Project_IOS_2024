@@ -4,7 +4,6 @@
 //
 //  Created by  User on 24.05.2024.
 //
-
 import UIKit
 
 class ChiTieuDetailController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate {
@@ -17,6 +16,8 @@ class ChiTieuDetailController: UIViewController, UITextFieldDelegate, UINavigati
     @IBOutlet weak var ngayTao: UITextField!
     @IBOutlet weak var soTien: UITextField!
     @IBOutlet weak var navigation: UINavigationItem!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,7 @@ class ChiTieuDetailController: UIViewController, UITextFieldDelegate, UINavigati
         }
         
     }
+
    
     // An ban phim
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -45,7 +47,7 @@ class ChiTieuDetailController: UIViewController, UITextFieldDelegate, UINavigati
     
     // Ham ket thuc qua trinh soan thao
     func textFieldDidEndEditing(_ textField: UITextField) {
-        print("\(tenChiTieu.text!)")
+        //print("\(tenChiTieu.text!)")
     }
     
     // Nut cancel

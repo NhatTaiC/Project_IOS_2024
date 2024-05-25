@@ -296,6 +296,8 @@ class ChiTieuTableViewController: UITableViewController {
         }
     }
     
+    
+    
  
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -321,6 +323,18 @@ class ChiTieuTableViewController: UITableViewController {
          }
      }
      
+    func isDuplicateChiTieu(chitieu: ChiTieu) -> Bool {
+      // Implement logic to check for duplicate expense
+      // Here's an example using a loop:
+      for existingChiTieu in chitieus {
+        if existingChiTieu.tenCT == chitieu.tenCT && existingChiTieu.ngayTao == chitieu.ngayTao &&
+            existingChiTieu.soTien == chitieu.soTien
+          {
+          return true
+        }
+      }
+      return false
+    }
      
 
 }

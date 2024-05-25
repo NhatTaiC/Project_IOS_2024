@@ -43,7 +43,7 @@ class EditChiTieuDetailController: UIViewController, UITextFieldDelegate, UINavi
     
     // Ham ket thuc qua trinh soan thao
     func textFieldDidEndEditing(_ textField: UITextField) {
-        print("\(tenCT.text!)")
+        //print("\(tenCT.text!)")
     }
     
     // Nut quay ve
