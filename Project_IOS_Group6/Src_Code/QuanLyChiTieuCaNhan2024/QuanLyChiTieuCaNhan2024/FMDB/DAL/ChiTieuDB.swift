@@ -36,7 +36,7 @@ class ChiTieuDB {
             // 1. Tao bang chitieus
             let sql = "CREATE TABLE \(CHITIEU_TABLE_NAME)("
             + "\(CHITIEU_ID) INTEGER PRIMARY KEY AUTOINCREMENT, "
-            + "\(CHITIEU_TENCT) TEXT PRIMARY KEY, "
+            + "\(CHITIEU_TENCT) TEXT, "
             + "\(CHITIEU_NGAYTAO) TEXT, "
             + "\(CHITIEU_SOTIEN) TEXT)"
             
